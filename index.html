@@ -1,0 +1,916 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="./assets/fonts/fontawesome-free-5.15.4/css/all.min.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <title>Shoppon</title>
+</head>
+<body>
+    <div class="apps">
+
+        <!-- Header -->
+        <div class="header">
+            <div class="grid">
+                <div class="navbar">
+                    <ul class="navbar-list">
+                        <li class="navbar-item navbar-item-separate  "><a href="" class="navbar-link">Kênh Người Bán</a></li>
+                        <li class="navbar-item navbar-item-separate "><a href="" class="navbar-link">Trở thành Người bán Shoppon</a></li>
+                        <li class="navbar-item navbar-item-separate navbar-download"> <a href="" class="navbar-link"> Tải ứng dụng</a>
+                            <div class="qr-code">
+                                <img src="./assets/img/qrcode.png" alt="QR Code" class="qr-code-img">
+                                <div class="operating-system">
+                                  <a href="" class=""><img src="./assets/img/ios.png" alt="IOS" class="qr-img-download"></a>
+                                  <a href="" class=""><img src="./assets/img/androi.png" alt="Androi" class="qr-img-download"></a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="navbar-item">Kết nối
+                            <a href=""><i class="fab fa-facebook-square navbar-icon navbar-link pull-4px"></i></a>
+                            <a href=""><i class="fab fa-instagram navbar-icon navbar-link pull-4px"></i></a>
+                      </li>
+                    </ul>
+                    <ul class="navbar-list">
+                        <li class="navbar-item notification">
+                          <i class="far fa-bell navbar-icon  "></i>
+                         <a href="" class="navbar-link "> Thông Báo </a>
+                         
+                         <!-- Notification -->
+                         <div class="header-notify">
+                              <div class="header-notify--img">
+                                  <img src="./assets/img/logo-notify.jpg" alt="logo-notify" class="logo-notify-img">
+                                  <p>Đăng nhập để xem Thông Báo !</p>
+                              </div>
+                              
+                                <ul class="notify-list-login-register">
+                                   <a href="" class="notify-btn-login-register" >Đăng Nhập</li></a>
+                                   <a href="" class="notify-btn-login-register" >Đăng Ký</li></a>
+                                </ul>    
+                              
+                         </div>
+                        </li>
+                        <li class="navbar-item">
+                          <i class="far fa-question-circle navbar-icon"></i>
+                          <a href="" class="navbar-link">Hỗ Trợ</a>
+                        </li>
+                        <li class="navbar-item navbar-item-separate"><a href="" class="navbar-link">Đăng Ký</a></li>
+                        <li class="navbar-item"><a href="" class="navbar-link">Đăng Nhập</a></li>
+      
+                    </ul>
+                 </div>
+                 <div class="header-with-search">
+                      <!-- Logo -->
+                 <div class="header-logo">
+                    <img src="./assets/img/logo.png" alt="logo-shoppon" class="header-logo-shoppon">
+                </div>
+                   
+                <div class="header-search">
+                    <input type="text" placeholder="Nhập từ khóa để tìm kiếm" class="header-search-wrapper">
+                    <div class="header-search-icon"> <i class="fas fa-search icon-search"></i></div> 
+                    <div class="header-search-history">
+                        <h4 class="header-history">Lịch Sử Tìm Kiếm</h4>
+                        <div class="header-history-item"><a href="" class="header-history-link">Pon</a></div>
+                        <div class="header-history-item"><a href="" class="header-history-link">Moon</a></div>
+                        
+                        
+                    </div>      
+                </div>
+                
+                <div class="header-cart">
+                    <i class="fas fa-shopping-cart"></i>
+                    <div class="notify-cart">
+                        <img src="./assets/img/cart-notify.png" alt="cart-notify" class="img-notify-cart">
+                        <p>Chưa có sản phẩm</p>
+                    </div>
+                </div>
+                 </div>
+            
+               
+              </div>
+
+            </div>
+           
+
+        <!-- Container -->
+        <div class="container">
+            <div class="grid">
+             <div class="grid__row">
+                 <div class="grid__column-2">
+                  <nav class="category">                   
+                    <h2 class="category-heading"><i class="fas fa-list category-icon"></i>Danh Mục</h2>
+                      <ul class="category-list">
+                          <li class="category-item category-active"><a href="" class="category-link ">Sản Phẩm</a></li>
+                          <li class="category-item"><a href="" class="category-link ">Quần Áo - Nam</a></li>
+                          <li class="category-item"><a href="" class="category-link ">Quần Áo - Nữ</a></li>
+                          <li class="category-item"><a href="" class="category-link ">Quần Áo - Trẻ Em</a></li>
+                          <li class="category-item"><a href="" class="category-link ">Giày</a></li>
+                          <li class="category-item"><a href="" class="category-link ">Ultraboost</a></li>
+                          <li class="category-item"><a href="" class="category-link ">Originals</a></li>
+                          <li class="category-item"><a href="" class="category-link ">Superstar</a></li>
+                          <li class="category-item"><a href="" class="category-link ">NMD</a></li>
+                          <li class="category-item"><a href="" class="category-link ">Stan Smith</a></li>
+                      </ul>
+                  </nav>
+                 </div>
+
+                 <div class="grid__column-10">
+                     <div class="home-filter">
+                         <div class="home-filter__block">
+                   <span class="home-filter-label">Sắp xếp theo</span>
+                   <button class="home-filter-btn">Phổ Biến</button>
+                   <button class="home-filter-btn home-filter-btn__active">Mới Nhất</button>
+                   <button class="home-filter-btn">Bán Chạy</button>
+                    
+                   <div class="home-filter-selection">
+                         <span class="home-filter-selection-label">Giá</span>
+                         <i class="fas fa-chevron-down slection-icon"></i> 
+                     <div class="home-filter-price">
+                         <ul class="home-filter-price-list">
+                             <li class="home-filter-price-item"><a href="" class="home-filter-price-link">Giá: Thấp đến cao</a></li>
+                             <li class="home-filter-price-item"><a href="" class="home-filter-price-link">Giá: Cao đến thấp</a></li>
+                         </ul>
+                     </div>
+
+                     </div>
+                    </div>
+
+                 <div class="home-filter-page">
+                     <span class="home-filter-page__num">
+                         <span class="home-filter-page__current">1</span>/14
+                     </span>
+                     
+                     <div class="home-filter-page__control">
+                         <a href="" class="home-filter-page-btn home-filter-page-btn__disable">
+                            <i class="fas fa-chevron-left home-filter-icon"></i>
+                         </a>
+                         <a href="" class="home-filter-page-btn">
+                            <i class="fas fa-chevron-right"></i>
+                         </a>
+                     </div>
+                 </div>
+
+                 </div>  
+
+                 <div class="home-product">
+                     <div class="grid__row">
+                         <div class="grid__column-2-4">
+                             <a class="home-product-item" href="#">
+                                 <div class="home-product-item__img" style="background-image: url(https://cf.shopee.vn/file/1b6207e361626db3e840b06445072ea4);"></div>
+                                 <h3 class="home-product-item__name">Giày adidas RUNNING Nam Supernova Màu Trắng FV6026</h3>
+                                
+                                 <div class="home-product-item__price">
+                                     <span class="home-product-item__price-old">2.700.000 đ</span>
+                                     <span class="home-product-item__price-current">2.430.000 đ</span>                
+                                 </div>
+                                
+                                <div class="home-product-item__action">
+                                    <span class="home-product-item__like">
+                                        <i class="far fa-heart product-item__icon-like"></i>
+                                        <!-- <i class="fas fa-heart"></i> -->
+                                    </span>
+                                    <div class="home-product-item__rating">
+                                        <i class="fas fa-star star-color"></i>
+                                        <i class="fas fa-star star-color"></i>
+                                        <i class="fas fa-star star-color"></i>
+                                        <i class="fas fa-star star-color"></i>
+                                        <i class="fas fa-star star-color"></i>
+                                    </div>   
+                                    <span class="home-product-item__sold-out">Đã bán 569</span>
+                                </div>
+                                <div class="home-product-item__origin">
+                                    <span class="home-product-item__origin-name">Hà Nội</span>
+                                </div>
+
+                                <div class="home-product-item__favourite">
+                                    <i class="fas fa-check"></i>
+                                    <span>Yêu Thích</span>
+                                </div>
+                                <div class="home-product-item__sale-off">
+                                    <span class="home-product-item__sale-off-percent">10%</span>
+                                    <span class="home-product-item__sale-off-label">GIẢM</span>
+                                </div>
+                             </a>
+                             
+                         </div>
+
+                         <div class="grid__column-2-4">
+                            <a class="home-product-item" href="#">
+                                <div class="home-product-item__img" style="background-image: url(https://cf.shopee.vn/file/1b6207e361626db3e840b06445072ea4);"></div>
+                                <h3 class="home-product-item__name">Giày adidas RUNNING Nam Supernova Màu Trắng FV6026</h3>
+                               
+                                <div class="home-product-item__price">
+                                    <span class="home-product-item__price-old">2.700.000 đ</span>
+                                    <span class="home-product-item__price-current">2.430.000 đ</span>                
+                                </div>
+                               
+                               <div class="home-product-item__action">
+                                   <span class="home-product-item__like">
+                                       <i class="far fa-heart product-item__icon-like"></i>
+                                       <!-- <i class="fas fa-heart"></i> -->
+                                   </span>
+                                   <div class="home-product-item__rating">
+                                       <i class="fas fa-star star-color"></i>
+                                       <i class="fas fa-star star-color"></i>
+                                       <i class="fas fa-star star-color"></i>
+                                       <i class="fas fa-star star-color"></i>
+                                       <i class="fas fa-star star-color"></i>
+                                   </div>   
+                                   <span class="home-product-item__sold-out">Đã bán 569</span>
+                               </div>
+                               <div class="home-product-item__origin">
+                                   <span class="home-product-item__origin-name">Hà Nội</span>
+                               </div>
+
+                               <div class="home-product-item__favourite">
+                                   <i class="fas fa-check"></i>
+                                   <span>Yêu Thích</span>
+                               </div>
+                               <div class="home-product-item__sale-off">
+                                   <span class="home-product-item__sale-off-percent">10%</span>
+                                   <span class="home-product-item__sale-off-label">GIẢM</span>
+                               </div>
+                            </d>
+                            
+                        </div>
+
+
+                        <div class="grid__column-2-4">
+                            <a class="home-product-item" href="#">
+                                <div class="home-product-item__img" style="background-image: url(https://cf.shopee.vn/file/1b6207e361626db3e840b06445072ea4);"></div>
+                                <h3 class="home-product-item__name">Giày adidas RUNNING Nam Supernova Màu Trắng FV6026</h3>
+                               
+                                <div class="home-product-item__price">
+                                    <span class="home-product-item__price-old">2.700.000 đ</span>
+                                    <span class="home-product-item__price-current">2.430.000 đ</span>                
+                                </div>
+                               
+                               <div class="home-product-item__action">
+                                   <span class="home-product-item__like">
+                                       <i class="far fa-heart product-item__icon-like"></i>
+                                       <!-- <i class="fas fa-heart"></i> -->
+                                   </span>
+                                   <div class="home-product-item__rating">
+                                       <i class="fas fa-star star-color"></i>
+                                       <i class="fas fa-star star-color"></i>
+                                       <i class="fas fa-star star-color"></i>
+                                       <i class="fas fa-star star-color"></i>
+                                       <i class="fas fa-star star-color"></i>
+                                   </div>   
+                                   <span class="home-product-item__sold-out">Đã bán 569</span>
+                               </div>
+                               <div class="home-product-item__origin">
+                                   <span class="home-product-item__origin-name">Hà Nội</span>
+                               </div>
+
+                               <div class="home-product-item__favourite">
+                                   <i class="fas fa-check"></i>
+                                   <span>Yêu Thích</span>
+                               </div>
+                               <div class="home-product-item__sale-off">
+                                   <span class="home-product-item__sale-off-percent">10%</span>
+                                   <span class="home-product-item__sale-off-label">GIẢM</span>
+                               </div>
+                            </a>
+                            
+                        </div>
+
+
+                        <div class="grid__column-2-4">
+                            <a class="home-product-item" href="#">
+                                <div class="home-product-item__img" style="background-image: url(https://cf.shopee.vn/file/1b6207e361626db3e840b06445072ea4);"></div>
+                                <h3 class="home-product-item__name">Giày adidas RUNNING Nam Supernova Màu Trắng FV6026</h3>
+                               
+                                <div class="home-product-item__price">
+                                    <span class="home-product-item__price-old">2.700.000 đ</span>
+                                    <span class="home-product-item__price-current">2.430.000 đ</span>                
+                                </div>
+                               
+                               <div class="home-product-item__action">
+                                   <span class="home-product-item__like">
+                                       <i class="far fa-heart product-item__icon-like"></i>
+                                       <!-- <i class="fas fa-heart"></i> -->
+                                   </span>
+                                   <div class="home-product-item__rating">
+                                       <i class="fas fa-star star-color"></i>
+                                       <i class="fas fa-star star-color"></i>
+                                       <i class="fas fa-star star-color"></i>
+                                       <i class="fas fa-star star-color"></i>
+                                       <i class="fas fa-star star-color"></i>
+                                   </div>   
+                                   <span class="home-product-item__sold-out">Đã bán 569</span>
+                               </div>
+                               <div class="home-product-item__origin">
+                                   <span class="home-product-item__origin-name">Hà Nội</span>
+                               </div>
+
+                               <div class="home-product-item__favourite">
+                                   <i class="fas fa-check"></i>
+                                   <span>Yêu Thích</span>
+                               </div>
+                               <div class="home-product-item__sale-off">
+                                   <span class="home-product-item__sale-off-percent">10%</span>
+                                   <span class="home-product-item__sale-off-label">GIẢM</span>
+                               </div>
+                            </a>
+                            
+                        </div>
+
+
+                        <div class="grid__column-2-4">
+                            <a class="home-product-item" href="#">
+                                <div class="home-product-item__img" style="background-image: url(https://cf.shopee.vn/file/1b6207e361626db3e840b06445072ea4);"></div>
+                                <h3 class="home-product-item__name">Giày adidas RUNNING Nam Supernova Màu Trắng FV6026</h3>
+                               
+                                <div class="home-product-item__price">
+                                    <span class="home-product-item__price-old">2.700.000 đ</span>
+                                    <span class="home-product-item__price-current">2.430.000 đ</span>                
+                                </div>
+                               
+                               <div class="home-product-item__action">
+                                   <span class="home-product-item__like">
+                                       <i class="far fa-heart product-item__icon-like"></i>
+                                       <!-- <i class="fas fa-heart"></i> -->
+                                   </span>
+                                   <div class="home-product-item__rating">
+                                       <i class="fas fa-star star-color"></i>
+                                       <i class="fas fa-star star-color"></i>
+                                       <i class="fas fa-star star-color"></i>
+                                       <i class="fas fa-star star-color"></i>
+                                       <i class="fas fa-star star-color"></i>
+                                   </div>   
+                                   <span class="home-product-item__sold-out">Đã bán 569</span>
+                               </div>
+                               <div class="home-product-item__origin">
+                                   <span class="home-product-item__origin-name">Hà Nội</span>
+                               </div>
+
+                               <div class="home-product-item__favourite">
+                                   <i class="fas fa-check"></i>
+                                   <span>Yêu Thích</span>
+                               </div>
+                               <div class="home-product-item__sale-off">
+                                   <span class="home-product-item__sale-off-percent">10%</span>
+                                   <span class="home-product-item__sale-off-label">GIẢM</span>
+                               </div>
+                            </a>
+                            
+                        </div>
+                     </div>
+
+
+                     <div class="grid__row">
+                        <div class="grid__column-2-4">
+                            <a class="home-product-item" href="#">
+                                <div class="home-product-item__img" style="background-image: url(https://cf.shopee.vn/file/1b6207e361626db3e840b06445072ea4);"></div>
+                                <h3 class="home-product-item__name">Giày adidas RUNNING Nam Supernova Màu Trắng FV6026</h3>
+                               
+                                <div class="home-product-item__price">
+                                    <span class="home-product-item__price-old">2.700.000 đ</span>
+                                    <span class="home-product-item__price-current">2.430.000 đ</span>                
+                                </div>
+                               
+                               <div class="home-product-item__action">
+                                   <span class="home-product-item__like">
+                                       <i class="far fa-heart product-item__icon-like"></i>
+                                       <!-- <i class="fas fa-heart"></i> -->
+                                   </span>
+                                   <div class="home-product-item__rating">
+                                       <i class="fas fa-star star-color"></i>
+                                       <i class="fas fa-star star-color"></i>
+                                       <i class="fas fa-star star-color"></i>
+                                       <i class="fas fa-star star-color"></i>
+                                       <i class="fas fa-star star-color"></i>
+                                   </div>   
+                                   <span class="home-product-item__sold-out">Đã bán 569</span>
+                               </div>
+                               <div class="home-product-item__origin">
+                                   <span class="home-product-item__origin-name">Hà Nội</span>
+                               </div>
+
+                               <div class="home-product-item__favourite">
+                                   <i class="fas fa-check"></i>
+                                   <span>Yêu Thích</span>
+                               </div>
+                               <div class="home-product-item__sale-off">
+                                   <span class="home-product-item__sale-off-percent">10%</span>
+                                   <span class="home-product-item__sale-off-label">GIẢM</span>
+                               </div>
+                            </a>
+                            
+                        </div>
+
+                        <div class="grid__column-2-4">
+                           <a class="home-product-item" href="#">
+                               <div class="home-product-item__img" style="background-image: url(https://cf.shopee.vn/file/1b6207e361626db3e840b06445072ea4);"></div>
+                               <h3 class="home-product-item__name">Giày adidas RUNNING Nam Supernova Màu Trắng FV6026</h3>
+                              
+                               <div class="home-product-item__price">
+                                   <span class="home-product-item__price-old">2.700.000 đ</span>
+                                   <span class="home-product-item__price-current">2.430.000 đ</span>                
+                               </div>
+                              
+                              <div class="home-product-item__action">
+                                  <span class="home-product-item__like">
+                                      <i class="far fa-heart product-item__icon-like"></i>
+                                      <!-- <i class="fas fa-heart"></i> -->
+                                  </span>
+                                  <div class="home-product-item__rating">
+                                      <i class="fas fa-star star-color"></i>
+                                      <i class="fas fa-star star-color"></i>
+                                      <i class="fas fa-star star-color"></i>
+                                      <i class="fas fa-star star-color"></i>
+                                      <i class="fas fa-star star-color"></i>
+                                  </div>   
+                                  <span class="home-product-item__sold-out">Đã bán 569</span>
+                              </div>
+                              <div class="home-product-item__origin">
+                                  <span class="home-product-item__origin-name">Hà Nội</span>
+                              </div>
+
+                              <div class="home-product-item__favourite">
+                                  <i class="fas fa-check"></i>
+                                  <span>Yêu Thích</span>
+                              </div>
+                              <div class="home-product-item__sale-off">
+                                  <span class="home-product-item__sale-off-percent">10%</span>
+                                  <span class="home-product-item__sale-off-label">GIẢM</span>
+                              </div>
+                           </a>
+                           
+                       </div>
+
+
+                       <div class="grid__column-2-4">
+                           <a class="home-product-item" href="#">
+                               <div class="home-product-item__img" style="background-image: url(https://cf.shopee.vn/file/1b6207e361626db3e840b06445072ea4);"></div>
+                               <h3 class="home-product-item__name">Giày adidas RUNNING Nam Supernova Màu Trắng FV6026</h3>
+                              
+                               <div class="home-product-item__price">
+                                   <span class="home-product-item__price-old">2.700.000 đ</span>
+                                   <span class="home-product-item__price-current">2.430.000 đ</span>                
+                               </div>
+                              
+                              <div class="home-product-item__action">
+                                  <span class="home-product-item__like">
+                                      <i class="far fa-heart product-item__icon-like"></i>
+                                      <!-- <i class="fas fa-heart"></i> -->
+                                  </span>
+                                  <div class="home-product-item__rating">
+                                      <i class="fas fa-star star-color"></i>
+                                      <i class="fas fa-star star-color"></i>
+                                      <i class="fas fa-star star-color"></i>
+                                      <i class="fas fa-star star-color"></i>
+                                      <i class="fas fa-star star-color"></i>
+                                  </div>   
+                                  <span class="home-product-item__sold-out">Đã bán 569</span>
+                              </div>
+                              <div class="home-product-item__origin">
+                                  <span class="home-product-item__origin-name">Hà Nội</span>
+                              </div>
+
+                              <div class="home-product-item__favourite">
+                                  <i class="fas fa-check"></i>
+                                  <span>Yêu Thích</span>
+                              </div>
+                              <div class="home-product-item__sale-off">
+                                  <span class="home-product-item__sale-off-percent">10%</span>
+                                  <span class="home-product-item__sale-off-label">GIẢM</span>
+                              </div>
+                           </a>
+                           
+                       </div>
+
+
+                       <div class="grid__column-2-4">
+                           <a class="home-product-item" href="#">
+                               <div class="home-product-item__img" style="background-image: url(https://cf.shopee.vn/file/1b6207e361626db3e840b06445072ea4);"></div>
+                               <h3 class="home-product-item__name">Giày adidas RUNNING Nam Supernova Màu Trắng FV6026</h3>
+                              
+                               <div class="home-product-item__price">
+                                   <span class="home-product-item__price-old">2.700.000 đ</span>
+                                   <span class="home-product-item__price-current">2.430.000 đ</span>                
+                               </div>
+                              
+                              <div class="home-product-item__action">
+                                  <span class="home-product-item__like">
+                                      <i class="far fa-heart product-item__icon-like"></i>
+                                      <!-- <i class="fas fa-heart"></i> -->
+                                  </span>
+                                  <div class="home-product-item__rating">
+                                      <i class="fas fa-star star-color"></i>
+                                      <i class="fas fa-star star-color"></i>
+                                      <i class="fas fa-star star-color"></i>
+                                      <i class="fas fa-star star-color"></i>
+                                      <i class="fas fa-star star-color"></i>
+                                  </div>   
+                                  <span class="home-product-item__sold-out">Đã bán 569</span>
+                              </div>
+                              <div class="home-product-item__origin">
+                                  <span class="home-product-item__origin-name">Hà Nội</span>
+                              </div>
+
+                              <div class="home-product-item__favourite">
+                                  <i class="fas fa-check"></i>
+                                  <span>Yêu Thích</span>
+                              </div>
+                              <div class="home-product-item__sale-off">
+                                  <span class="home-product-item__sale-off-percent">10%</span>
+                                  <span class="home-product-item__sale-off-label">GIẢM</span>
+                              </div>
+                           </a>
+                           
+                       </div>
+
+
+                       <div class="grid__column-2-4">
+                           <a class="home-product-item" href="#">
+                               <div class="home-product-item__img" style="background-image: url(https://cf.shopee.vn/file/1b6207e361626db3e840b06445072ea4);"></div>
+                               <h3 class="home-product-item__name">Giày adidas RUNNING Nam Supernova Màu Trắng FV6026</h3>
+                              
+                               <div class="home-product-item__price">
+                                   <span class="home-product-item__price-old">2.700.000 đ</span>
+                                   <span class="home-product-item__price-current">2.430.000 đ</span>                
+                               </div>
+                              
+                              <div class="home-product-item__action">
+                                  <span class="home-product-item__like">
+                                      <i class="far fa-heart product-item__icon-like"></i>
+                                      <!-- <i class="fas fa-heart"></i> -->
+                                  </span>
+                                  <div class="home-product-item__rating">
+                                      <i class="fas fa-star star-color"></i>
+                                      <i class="fas fa-star star-color"></i>
+                                      <i class="fas fa-star star-color"></i>
+                                      <i class="fas fa-star star-color"></i>
+                                      <i class="fas fa-star star-color"></i>
+                                  </div>   
+                                  <span class="home-product-item__sold-out">Đã bán 569</span>
+                              </div>
+                              <div class="home-product-item__origin">
+                                  <span class="home-product-item__origin-name">Hà Nội</span>
+                              </div>
+
+                              <div class="home-product-item__favourite">
+                                  <i class="fas fa-check"></i>
+                                  <span>Yêu Thích</span>
+                              </div>
+                              <div class="home-product-item__sale-off">
+                                  <span class="home-product-item__sale-off-percent">10%</span>
+                                  <span class="home-product-item__sale-off-label">GIẢM</span>
+                              </div>
+                           </a>
+
+                           
+                           
+                       </div>
+
+                       
+                    </div>
+
+
+                    <div class="grid__row">
+                        <div class="grid__column-2-4">
+                            <a class="home-product-item" href="#">
+                                <div class="home-product-item__img" style="background-image: url(https://cf.shopee.vn/file/1b6207e361626db3e840b06445072ea4);"></div>
+                                <h3 class="home-product-item__name">Giày adidas RUNNING Nam Supernova Màu Trắng FV6026</h3>
+                               
+                                <div class="home-product-item__price">
+                                    <span class="home-product-item__price-old">2.700.000 đ</span>
+                                    <span class="home-product-item__price-current">2.430.000 đ</span>                
+                                </div>
+                               
+                               <div class="home-product-item__action">
+                                   <span class="home-product-item__like">
+                                       <i class="far fa-heart product-item__icon-like"></i>
+                                       <!-- <i class="fas fa-heart"></i> -->
+                                   </span>
+                                   <div class="home-product-item__rating">
+                                       <i class="fas fa-star star-color"></i>
+                                       <i class="fas fa-star star-color"></i>
+                                       <i class="fas fa-star star-color"></i>
+                                       <i class="fas fa-star star-color"></i>
+                                       <i class="fas fa-star star-color"></i>
+                                   </div>   
+                                   <span class="home-product-item__sold-out">Đã bán 569</span>
+                               </div>
+                               <div class="home-product-item__origin">
+                                   <span class="home-product-item__origin-name">Hà Nội</span>
+                               </div>
+
+                               <div class="home-product-item__favourite">
+                                   <i class="fas fa-check"></i>
+                                   <span>Yêu Thích</span>
+                               </div>
+                               <div class="home-product-item__sale-off">
+                                   <span class="home-product-item__sale-off-percent">10%</span>
+                                   <span class="home-product-item__sale-off-label">GIẢM</span>
+                               </div>
+                            </a>
+                            
+                        </div>
+
+                        <div class="grid__column-2-4">
+                           <a class="home-product-item" href="#">
+                               <div class="home-product-item__img" style="background-image: url(https://cf.shopee.vn/file/1b6207e361626db3e840b06445072ea4);"></div>
+                               <h3 class="home-product-item__name">Giày adidas RUNNING Nam Supernova Màu Trắng FV6026</h3>
+                              
+                               <div class="home-product-item__price">
+                                   <span class="home-product-item__price-old">2.700.000 đ</span>
+                                   <span class="home-product-item__price-current">2.430.000 đ</span>                
+                               </div>
+                              
+                              <div class="home-product-item__action">
+                                  <span class="home-product-item__like">
+                                      <i class="far fa-heart product-item__icon-like"></i>
+                                      <!-- <i class="fas fa-heart"></i> -->
+                                  </span>
+                                  <div class="home-product-item__rating">
+                                      <i class="fas fa-star star-color"></i>
+                                      <i class="fas fa-star star-color"></i>
+                                      <i class="fas fa-star star-color"></i>
+                                      <i class="fas fa-star star-color"></i>
+                                      <i class="fas fa-star star-color"></i>
+                                  </div>   
+                                  <span class="home-product-item__sold-out">Đã bán 569</span>
+                              </div>
+                              <div class="home-product-item__origin">
+                                  <span class="home-product-item__origin-name">Hà Nội</span>
+                              </div>
+
+                              <div class="home-product-item__favourite">
+                                  <i class="fas fa-check"></i>
+                                  <span>Yêu Thích</span>
+                              </div>
+                              <div class="home-product-item__sale-off">
+                                  <span class="home-product-item__sale-off-percent">10%</span>
+                                  <span class="home-product-item__sale-off-label">GIẢM</span>
+                              </div>
+                           </a>
+                           
+                       </div>
+
+
+                       <div class="grid__column-2-4">
+                           <a class="home-product-item" href="#">
+                               <div class="home-product-item__img" style="background-image: url(https://cf.shopee.vn/file/1b6207e361626db3e840b06445072ea4);"></div>
+                               <h3 class="home-product-item__name">Giày adidas RUNNING Nam Supernova Màu Trắng FV6026</h3>
+                              
+                               <div class="home-product-item__price">
+                                   <span class="home-product-item__price-old">2.700.000 đ</span>
+                                   <span class="home-product-item__price-current">2.430.000 đ</span>                
+                               </div>
+                              
+                              <div class="home-product-item__action">
+                                  <span class="home-product-item__like">
+                                      <i class="far fa-heart product-item__icon-like"></i>
+                                      <!-- <i class="fas fa-heart"></i> -->
+                                  </span>
+                                  <div class="home-product-item__rating">
+                                      <i class="fas fa-star star-color"></i>
+                                      <i class="fas fa-star star-color"></i>
+                                      <i class="fas fa-star star-color"></i>
+                                      <i class="fas fa-star star-color"></i>
+                                      <i class="fas fa-star star-color"></i>
+                                  </div>   
+                                  <span class="home-product-item__sold-out">Đã bán 569</span>
+                              </div>
+                              <div class="home-product-item__origin">
+                                  <span class="home-product-item__origin-name">Hà Nội</span>
+                              </div>
+
+                              <div class="home-product-item__favourite">
+                                  <i class="fas fa-check"></i>
+                                  <span>Yêu Thích</span>
+                              </div>
+                              <div class="home-product-item__sale-off">
+                                  <span class="home-product-item__sale-off-percent">10%</span>
+                                  <span class="home-product-item__sale-off-label">GIẢM</span>
+                              </div>
+                           </a>
+                           
+                       </div>
+
+
+                       <div class="grid__column-2-4">
+                           <a class="home-product-item " href="#">
+                               <div class="home-product-item__img" style="background-image: url(https://cf.shopee.vn/file/1b6207e361626db3e840b06445072ea4);"></div>
+                               <h3 class="home-product-item__name">Giày adidas RUNNING Nam Supernova Màu Trắng FV6026</h3>
+                              
+                               <div class="home-product-item__price">
+                                   <span class="home-product-item__price-old">2.700.000 đ</span>
+                                   <span class="home-product-item__price-current">2.430.000 đ</span>                
+                               </div>
+                              
+                              <div class="home-product-item__action">
+                                  <span class="home-product-item__like">
+                                      <i class="far fa-heart product-item__icon-like"></i>
+                                      <!-- <i class="fas fa-heart"></i> -->
+                                  </span>
+                                  <div class="home-product-item__rating">
+                                      <i class="fas fa-star star-color"></i>
+                                      <i class="fas fa-star star-color"></i>
+                                      <i class="fas fa-star star-color"></i>
+                                      <i class="fas fa-star star-color"></i>
+                                      <i class="fas fa-star star-color"></i>
+                                  </div>   
+                                  <span class="home-product-item__sold-out">Đã bán 569</span>
+                              </div>
+                              <div class="home-product-item__origin">
+                                  <span class="home-product-item__origin-name">Hà Nội</span>
+                              </div>
+
+                              <div class="home-product-item__favourite">
+                                  <i class="fas fa-check"></i>
+                                  <span>Yêu Thích</span>
+                              </div>
+                              <div class="home-product-item__sale-off">
+                                  <span class="home-product-item__sale-off-percent">10%</span>
+                                  <span class="home-product-item__sale-off-label">GIẢM</span>
+                              </div>
+                           </a>
+                           
+                       </div>
+
+
+                       <div class="grid__column-2-4">
+                           <a class="home-product-item" href="#">
+                               <div class="home-product-item__img" style="background-image: url(https://cf.shopee.vn/file/1b6207e361626db3e840b06445072ea4);"></div>
+                               <h3 class="home-product-item__name">Giày adidas RUNNING Nam Supernova Màu Trắng FV6026</h3>
+                              
+                               <div class="home-product-item__price">
+                                   <span class="home-product-item__price-old">2.700.000 đ</span>
+                                   <span class="home-product-item__price-current">2.430.000 đ</span>                
+                               </div>
+                              
+                              <div class="home-product-item__action">
+                                  <span class="home-product-item__like">
+                                      <i class="far fa-heart product-item__icon-like"></i>
+                                      <!-- <i class="fas fa-heart"></i> -->
+                                  </span>
+                                  <div class="home-product-item__rating">
+                                      <i class="fas fa-star star-color"></i>
+                                      <i class="fas fa-star star-color"></i>
+                                      <i class="fas fa-star star-color"></i>
+                                      <i class="fas fa-star star-color"></i>
+                                      <i class="fas fa-star star-color"></i>
+                                  </div>   
+                                  <span class="home-product-item__sold-out">Đã bán 569</span>
+                              </div>
+                              <div class="home-product-item__origin">
+                                  <span class="home-product-item__origin-name">Hà Nội</span>
+                              </div>
+
+                              <div class="home-product-item__favourite">
+                                  <i class="fas fa-check"></i>
+                                  <span>Yêu Thích</span>
+                              </div>
+                              <div class="home-product-item__sale-off">
+                                  <span class="home-product-item__sale-off-percent">10%</span>
+                                  <span class="home-product-item__sale-off-label">GIẢM</span>
+                              </div>
+                           </a>
+                           
+                       </div>
+                    </div>
+
+
+
+                     </div>
+
+                 <ul class="pagination home-product__pagination">
+                     <li class="pagination-item">
+                         <a href="" class="pagination-item__link">
+                            <i class="fas fa-chevron-left pagination-item__icon"></i>
+                         </a>    
+                     </li>
+
+                     <li class="pagination-item pagination-item--active">
+                        <a href="" class="pagination-item__link">1</a>    
+                    </li>
+                    <li class="pagination-item">
+                        <a href="" class="pagination-item__link">2</a>    
+                    </li>
+                    <li class="pagination-item">
+                        <a href="" class="pagination-item__link">3</a>    
+                    </li>
+                    <li class="pagination-item">
+                        <a href="" class="pagination-item__link">4</a>    
+                    </li>
+                    <li class="pagination-item">
+                        <a href="" class="pagination-item__link">5</a>    
+                    </li>
+                    <li class="pagination-item">
+                        <a href="" class="pagination-item__link">...</a>    
+                    </li>
+                    <li class="pagination-item">
+                        <a href="" class="pagination-item__link">14</a>    
+                    </li>
+
+                     <li class="pagination-item">
+                        <a href="" class="pagination-item__link">
+                           <i class="fas fa-chevron-right pagination-item__icon"></i>
+                         </a>    
+                    </li>
+                 </ul>
+                 </div>
+                </div>
+             </div>   
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+           <div class="grid">
+               <div class="grid__row footer-top">
+                  
+                   <div class="grid__column-3">
+                       <h3 class="footer__heading">Chăm Sóc Khách Hàng</h3>
+                       <ul class="footer__list">
+                           <li class="footer__item">
+                               <a href="" class="footer-item__link">Trung Tâm Trợ Giúp</a>
+                           </li>
+                           <li class="footer__item">
+                            <a href="" class="footer-item__link">Shoppon Mail</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="" class="footer-item__link">Hướng Dẫn Mua Hàng</a>
+                        </li>
+                       </ul>
+
+                   </div>
+                   <div class="grid__column-3">
+                    <h3 class="footer__heading">Về Shoppon</h3>
+                    <ul class="footer__list">
+                        <li class="footer__item">
+                            <a href="" class="footer-item__link">Giới Thiệu Về Shoppon Việt Nam</a>
+                        </li>
+                        <li class="footer__item">
+                         <a href="" class="footer-item__link">Tuyển Dụng</a>
+                     </li>
+                     <li class="footer__item">
+                         <a href="" class="footer-item__link">Điều Khoản Shoppon</a>
+                     </li>
+                    </ul>
+                   </div>
+                
+                    
+                   <div class="grid__column-3">
+                    <h3 class="footer__heading">Theo Dõi Chúng Tôi Trên</h3>
+                    <ul class="footer__list">
+                        <li class="footer__item">
+                            <a href="" class="footer-item__link">
+                                <i class="fab fa-facebook footer-item__icon"></i>
+                                Facebook
+                            </a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="" class="footer-item__link">
+                                <i class="fab fa-instagram footer-item__icon"></i>
+                                Instagram
+                            </a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="" class="footer-item__link">
+                                <i class="fab fa-linkedin footer-item__icon"></i>
+                                Linkedin
+                            </a>
+                        </li>
+                    </ul>
+                   </div>
+
+                   <div class="grid__column-3">
+                    <h3 class="footer__heading">Vào Cửa Hàng Trên Ứng Dụng Shoppon</h3>
+                    <div class="footer__download">
+                        <img src="./assets/img/qrcode.png" alt="Download QR" class="footer-download-qr">
+                        <div class="footer__download-app">
+                            <a href="" class="footer__download-app-link">
+                                <img src="./assets/img/ios.png" alt="App Store" class="footer__download-app-img">
+                            </a>
+                            <a href="" class="footer__download-app-link">
+                                <img src="./assets/img/androi.png" alt="GG Play" class="footer__download-app-img">
+                            </a>
+                           
+                        </div>
+                    </div>
+                   </div>
+                </div>
+                
+               </div>
+           <div class="footer-bottom">
+            <div class="grid">
+                <p class="footer__text-decoration">Powered by <a href="" class="footer__text-decoration-link">Mon</a></p>
+            </div>
+           </div>
+
+        </div>
+    </div>
+</body>
+</html>
